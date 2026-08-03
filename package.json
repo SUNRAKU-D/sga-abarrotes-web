@@ -1,0 +1,39 @@
+{
+  "name": "sga-abarrotes-web",
+  "version": "1.2.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0 -p 4028",
+    "build": "next build",
+    "start": "next start -H 0.0.0.0",
+    "serve": "next start -H 0.0.0.0",
+    "preview": "npm run build && npm run start",
+    "type-check": "tsc --noEmit",
+    "check": "npm run type-check && npm run build",
+    "hash-password": "node scripts/generar-hash.mjs",
+    "verify-db": "node scripts/verificar-conexion.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "^1.7.0",
+    "next": "15.5.18",
+    "react": "19.0.3",
+    "react-dom": "19.0.3",
+    "react-hook-form": "^7.83.0",
+    "sonner": "^1.7.4",
+    "mssql": "^11.0.1",
+    "bcryptjs": "^2.4.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.16",
+    "@types/node": "^20",
+    "@types/react": "19.0.3",
+    "@types/react-dom": "19.0.3",
+    "autoprefixer": "10.4.2",
+    "postcss": "8.4.8",
+    "tailwindcss": "3.4.6",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  }
+}
